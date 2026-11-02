@@ -9,7 +9,7 @@ Daya Auto adalah aplikasi layanan pelanggan milik PT Daya Adicipta Motora, main 
 
 
 
-Masalahnya, di bisnis purnajual motor, pengalaman digital seperti ini punya dampak yang sering diremehkan. Pelanggan yang gagal booking sekali, atau tidak menerima kode OTP dua kali, cenderung tidak kembali. Mereka bukan pindah ke aplikasi lain — mereka pindah ke bengkel lain, atau lebih buruk lagi, berhenti servis di jaringan resmi. Padahal retensi servis adalah salah satu sumber pendapatan paling stabil bagi main dealer. Di sisi lain, main dealer Honda lain seperti Wahana (Wanda), Mitra Pinasthika Mulia (BromPit dan One Heart Card), juga bergerak ke arah yang sama: membangun aplikasi layanan sendiri. Artinya, pengalaman pengguna bukan lagi soal "nice to have", tapi sudah masuk wilayah kompetisi.
+Masalahnya, di bisnis purnajual motor, pengalaman digital seperti ini punya dampak yang sering diremehkan. Pelanggan yang gagal booking sekali, atau tidak menerima kode OTP dua kali, cenderung tidak kembali. Mereka bukan pindah ke aplikasi lain — mereka pindah ke bengkel lain, atau lebih buruk lagi, berhenti servis di jaringan resmi. Padahal retensi servis adalah salah satu sumber pendapatan paling stabil bagi main dealer. Di sisi lain, main dealer Honda lain seperti Wahana (Wanda), Mitra Pinasthika Mulia (BromPit), juga bergerak ke arah yang sama: membangun aplikasi layanan sendiri. Artinya, pengalaman pengguna bukan lagi soal "nice to have", tapi sudah masuk wilayah kompetisi.
 
 
 
@@ -17,7 +17,7 @@ Masalah klasiknya: untuk tahu apa yang sebenarnya dikeluhkan pengguna, saya seba
 
 
 
-Proyek ini berangkat dari sana: mengubah ulasan publik menjadi sinyal yang bisa ditindaklanjuti. Saya mengumpulkan ulasan Daya Auto dan tiga aplikasi main dealer Honda pembanding (Wanda, BromPit, One Heart Card) untuk periode 2024–2026, membersihkan dan mengklasifikasikan topiknya, lalu menyusunnya menjadi dashboard yang bisa dipakai tim produk untuk memutuskan apa yang perlu diperbaiki lebih dulu. Saya juga membandingkan posisi Daya Auto terhadap pembanding, dan melihat apakah rilis versi tertentu berkorelasi dengan perubahan rating.
+Proyek ini berangkat dari sana: mengubah ulasan publik menjadi sinyal yang bisa ditindaklanjuti. Saya mengumpulkan ulasan Daya Auto dan tiga aplikasi main dealer Honda pembanding (Wanda, BromPit, Motorku X) untuk periode 2024–2026, membersihkan dan mengklasifikasikan topiknya, lalu menyusunnya menjadi dashboard yang bisa dipakai tim produk untuk memutuskan apa yang perlu diperbaiki lebih dulu. Saya juga membandingkan posisi Daya Auto terhadap pembanding, dan melihat apakah rilis versi tertentu berkorelasi dengan perubahan rating.
 
 
 
@@ -59,8 +59,6 @@ Keempat, saya ingin **mengubah semua temuan itu menjadi urutan prioritas yang bi
 
 ## 5\. Ruang lingkup
 
-## 5. Ruang lingkup
-
 **Termasuk:** ulasan Google Play Januari 2024 – tanggal pengambilan data
 (akan dicatat di Bagian 7), aplikasi:
 
@@ -69,8 +67,7 @@ Keempat, saya ingin **mengubah semua temuan itu menjadi urutan prioritas yang bi
 - BromPit — pembanding, wilayah Jawa Timur & NTT
 - Motorku X — pembanding, aplikasi Honda nasional (skala berbeda dengan main dealer regional)
 
-Aplikasi One Heart Card (OHC) tidak disertakan karena tidak tersedia
-di Google Play Store pada saat pengambilan data.
+
 
 **Tidak termasuk:** data internal, App Store iOS, media sosial, analisis kausal.
 

@@ -13,7 +13,7 @@ Setiap fase punya **Hasil (Definition of Done)**. Jangan lanjut sebelum hasilnya
 **Hasil:** repo dengan commit pertama, BRD draf v0.1.
 
 ## Fase 1 — Inventaris aplikasi & audit fitur (hari 2–4)
-1. Di Google Play (browser), cari: **Daya Auto**, **Wanda (Wahana Honda)**, aplikasi **MPM Honda** (BromPit / One Heart Card).
+1. Di Google Play (browser), cari: **Daya Auto**, **Wanda (Wahana Honda)**, **BromPit**, dan **Motorku X**.
    Aplikasi main dealer Honda lain yang kamu temukan boleh ditambahkan. Aplikasi yang tidak ada di Play Store (mis. HSO) dilewati.
 2. Untuk tiap aplikasi catat: **package ID** (di URL, `...details?id=XXXX`), jumlah install, jumlah ulasan, skor, tanggal update terakhir.
    Isi `package_id` di `data/apps.csv`. Jangan menebak package ID; salin dari URL.
