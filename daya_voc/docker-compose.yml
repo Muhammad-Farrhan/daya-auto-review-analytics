@@ -1,0 +1,15 @@
+# Opsional: PostgreSQL lokal -> `docker compose up -d`
+# Tanpa Docker: install PostgreSQL biasa lalu buat database `daya_voc`.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: voc_user
+      POSTGRES_PASSWORD: voc_pass
+      POSTGRES_DB: daya_voc
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:

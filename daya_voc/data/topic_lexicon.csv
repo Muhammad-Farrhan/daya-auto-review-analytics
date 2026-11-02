@@ -1,0 +1,173 @@
+topic,keyword,exact,negatable
+login_otp,login,0,0
+login_otp,log in,0,0
+login_otp,sign in,0,0
+login_otp,masuk akun,0,0
+login_otp,tidak bisa masuk,0,0
+login_otp,gagal masuk,0,0
+login_otp,otp,0,0
+login_otp,kode verifikasi,0,0
+login_otp,verifikasi,0,0
+login_otp,password,0,0
+login_otp,kata sandi,0,0
+login_otp,lupa sandi,0,0
+login_otp,akun terkunci,0,0
+login_otp,sms,1,0
+account_data,pendaftaran,0,0
+account_data,registrasi,0,0
+account_data,daftar akun,0,0
+account_data,tidak bisa daftar,0,0
+account_data,data motor,0,0
+account_data,data kendaraan,0,0
+account_data,nomor rangka,0,0
+account_data,no rangka,0,0
+account_data,nomor mesin,0,0
+account_data,nomor polisi,0,0
+account_data,plat nomor,0,0
+account_data,data tidak sesuai,0,0
+account_data,data tidak muncul,0,0
+account_data,sinkron,0,0
+account_data,tambah motor,0,0
+account_data,tambah kendaraan,0,0
+account_data,profil,0,0
+account_data,ubah data,0,0
+account_data,ganti nomor,0,0
+booking_service,booking,0,0
+booking_service,pesan servis,0,0
+booking_service,reservasi,0,0
+booking_service,jadwal servis,0,0
+booking_service,atur jadwal,0,0
+booking_service,ubah jadwal,0,0
+booking_service,jam servis,0,0
+booking_service,slot,0,0
+booking_service,antri,0,0
+booking_service,antre,0,0
+kpb_claim,kpb,0,0
+kpb_claim,kartu perawatan berkala,0,0
+kpb_claim,servis gratis,0,0
+kpb_claim,klaim kpb,0,0
+kpb_claim,klaim,0,0
+kpb_claim,claim,0,0
+kpb_claim,gratis oli,0,0
+kpb_claim,buku servis,0,0
+kpb_claim,perawatan berkala,0,0
+kpb_claim,kupon kpb,0,0
+insurance_digital,asuransi,0,0
+insurance_digital,polis,0,0
+insurance_digital,perlindungan diri,0,0
+insurance_digital,santunan,0,0
+parts_homeservice,sparepart,0,0
+parts_homeservice,spare part,0,0
+parts_homeservice,suku cadang,0,0
+parts_homeservice,onderdil,0,0
+parts_homeservice,parts,0,0
+parts_homeservice,home servis,0,0
+parts_homeservice,homeservis,0,0
+parts_homeservice,servis rumah,0,0
+parts_homeservice,panggil mekanik,0,0
+parts_homeservice,pengiriman,0,0
+parts_homeservice,ongkir,0,0
+parts_homeservice,pesanan,0,0
+parts_homeservice,order,0,0
+parts_homeservice,beli oli,0,0
+parts_homeservice,pembayaran,0,0
+promo_points,promo,0,0
+promo_points,diskon,0,0
+promo_points,poin,0,0
+promo_points,voucher,0,0
+promo_points,reward,0,0
+promo_points,hadiah,0,0
+promo_points,undian,0,0
+promo_points,cashback,0,0
+promo_points,potongan harga,0,0
+app_bug_crash,error,0,0
+app_bug_crash,bug,0,0
+app_bug_crash,crash,0,0
+app_bug_crash,force close,0,0
+app_bug_crash,keluar sendiri,0,0
+app_bug_crash,tertutup sendiri,0,0
+app_bug_crash,tidak bisa dibuka,0,0
+app_bug_crash,tidak bisa buka,0,0
+app_bug_crash,layar putih,0,0
+app_bug_crash,blank,0,0
+app_bug_crash,hang,1,0
+app_bug_crash,macet,0,0
+app_bug_crash,tidak berfungsi,0,0
+app_bug_crash,gagal memuat,0,0
+app_bug_crash,tidak muncul,0,0
+app_bug_crash,loading terus,0,0
+app_bug_crash,tidak responsif,0,0
+app_bug_crash,maintenance,0,0
+app_bug_crash,server,0,0
+app_bug_crash,gangguan,0,0
+app_bug_crash,setelah update,0,0
+app_bug_crash,habis update,0,0
+app_bug_crash,sejak update,0,0
+performance_slow,lambat,0,0
+performance_slow,lemot,0,0
+performance_slow,lag,1,0
+performance_slow,berat,0,0
+performance_slow,loading lama,0,0
+performance_slow,lama banget,0,0
+performance_slow,lama sekali,0,0
+performance_slow,lelet,0,0
+performance_slow,boros baterai,0,0
+performance_slow,boros kuota,0,0
+performance_slow,memori penuh,0,0
+ui_ux,tampilan,0,0
+ui_ux,desain,0,0
+ui_ux,ui,1,0
+ui_ux,ux,1,0
+ui_ux,membingungkan,0,0
+ui_ux,ribet,0,0
+ui_ux,rumit,0,0
+ui_ux,susah digunakan,0,0
+ui_ux,sulit digunakan,0,0
+ui_ux,mudah digunakan,0,0
+ui_ux,menu,0,0
+ui_ux,navigasi,0,0
+ui_ux,fitur kurang,0,0
+ui_ux,tulisan kecil,0,0
+ui_ux,user friendly,0,0
+notification_reminder,notifikasi,0,0
+notification_reminder,notif,0,0
+notification_reminder,pengingat,0,0
+notification_reminder,reminder,0,0
+notification_reminder,pemberitahuan,0,0
+dealer_workshop,ahass,0,0
+dealer_workshop,bengkel,0,0
+dealer_workshop,mekanik,0,0
+dealer_workshop,teknisi,0,0
+dealer_workshop,dealer,0,0
+dealer_workshop,kasir,0,0
+dealer_workshop,pelayanan,0,0
+dealer_workshop,petugas,0,0
+dealer_workshop,cabang,0,0
+dealer_workshop,servis advisor,0,0
+dealer_workshop,harga servis,0,0
+dealer_workshop,mahal,0,0
+dealer_workshop,ramah,0,0
+dealer_workshop,customer servis,0,0
+dealer_workshop,cs,1,0
+dealer_workshop,admin,1,0
+dealer_workshop,hotline,0,0
+dealer_workshop,call center,0,0
+general_praise,bagus,0,1
+general_praise,mantap,0,1
+general_praise,membantu,0,1
+general_praise,mudah,0,1
+general_praise,keren,0,1
+general_praise,recommended,0,1
+general_praise,rekomended,0,1
+general_praise,memuaskan,0,1
+general_praise,puas,0,1
+general_praise,terbaik,0,1
+general_praise,bermanfaat,0,1
+general_praise,praktis,0,1
+general_praise,simpel,0,1
+general_praise,oke,1,1
+general_praise,top,1,1
+general_praise,cepat,0,1
+general_praise,lancar,0,1
+general_praise,senang,0,1
+general_praise,suka,0,1

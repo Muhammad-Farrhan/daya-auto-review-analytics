@@ -1,0 +1,5 @@
+# Opsional: sentimen berbasis teks (IndoBERT/RoBERTa) dan stemming
+# Instal hanya jika kamu mau membandingkan sentimen teks dengan sentimen dari rating.
+transformers>=4.40
+torch>=2.2
+Sastrawi>=1.0.1
