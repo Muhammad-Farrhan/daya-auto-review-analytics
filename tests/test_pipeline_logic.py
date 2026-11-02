@@ -115,9 +115,21 @@ class ReferenceCsvTests(unittest.TestCase):
 
     def test_shipped_reference_files(self):
         apps = read_csv_records(_path.ROOT / "data" / "apps.csv")
-        self.assertEqual(sum(a["role"] == "focus" for a in apps), 1)
-        self.assertTrue(all(a["package_id"] is None for a in apps), "package_id harus diisi pengguna, bukan ditebak")
+        self.assertEqual(sum(a["role"] == "focus" for a in apps), 1, "harus ada tepat satu aplikasi focus")
         self.assertEqual(read_csv_records(_path.ROOT / "data" / "events.csv"), [])
+
+    def test_package_ids_are_valid(self):
+        """Package ID wajib terisi dan berformat benar (bukan URL mentah, bukan kosong)."""
+        apps = read_csv_records(_path.ROOT / "data" / "apps.csv")
+        for a in apps:
+            pkg = a.get("package_id") or ""
+            self.assertTrue(pkg, f"{a['app_key']}: package_id kosong")
+            self.assertNotIn("&", pkg, f"{a['app_key']}: package_id masih mengandung '&' (hapus '&hl=id')")
+            self.assertNotIn("?", pkg, f"{a['app_key']}: package_id masih mengandung '?'")
+            self.assertFalse(pkg.startswith("id="), f"{a['app_key']}: package_id diawali 'id=' (hapus prefiks)")
+            # minimal 2 titik pemisah, mis. id.co.dayagroup
+            self.assertGreaterEqual(pkg.count("."), 2, f"{a['app_key']}: package_id '{pkg}' formatnya aneh")
+            self.assertNotIn(" ", pkg, f"{a['app_key']}: package_id tidak boleh ada spasi")
 
 
 if __name__ == "__main__":
