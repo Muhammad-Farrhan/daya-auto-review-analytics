@@ -1,5 +1,5 @@
 app_key,app_name,main_dealer,region,role,package_id,active
-daya_auto,Daya Auto,PT Daya Adicipta Motora,"Jawa Barat, Sulut, Malut, Gorontalo",focus,,true
-wanda,Wanda (Wahana Honda),PT Wahana Makmur Sejati,Jakarta-Tangerang,peer,,true
-mpm_brompit,BromPit,PT Mitra Pinasthika Mulia,Jawa Timur & NTT,peer,,true
-mpm_ohc,One Heart Card (OHC),PT Mitra Pinasthika Mulia,Jawa Timur & NTT,peer,,true
+daya_auto,Daya Auto,PT Daya Adicipta Motora,"Jawa Barat, Sulut, Malut, Gorontalo",focus,id.co.dayagroup.alwaysdaya.dam,TRUE
+wanda,Wanda (Wahana Honda),PT Wahana Makmur Sejati,Jakarta-Tangerang,peer,com.mokita.wahana,TRUE
+mpm_brompit,BromPit,PT Mitra Pinasthika Mulia,Jawa Timur & NTT,peer,com.mpm.brompit,TRUE
+mpm_ohc,One Heart Card (OHC),PT Mitra Pinasthika Mulia,Jawa Timur & NTT,peer,com.hso.motorku,TRUE
