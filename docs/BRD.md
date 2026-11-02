@@ -59,7 +59,18 @@ Keempat, saya ingin **mengubah semua temuan itu menjadi urutan prioritas yang bi
 
 ## 5\. Ruang lingkup
 
-**Termasuk:** ulasan Google Play Jan 2024 – Oktober 2026, aplikasi: Daya Auto + (daftar pembanding).
+## 5. Ruang lingkup
+
+**Termasuk:** ulasan Google Play Januari 2024 – tanggal pengambilan data
+(akan dicatat di Bagian 7), aplikasi:
+
+- Daya Auto (aplikasi fokus)
+- Wahana Honda (WANDA) — pembanding, wilayah Jakarta–Tangerang
+- BromPit — pembanding, wilayah Jawa Timur & NTT
+- Motorku X — pembanding, aplikasi Honda nasional (skala berbeda dengan main dealer regional)
+
+Aplikasi One Heart Card (OHC) tidak disertakan karena tidak tersedia
+di Google Play Store pada saat pengambilan data.
 
 **Tidak termasuk:** data internal, App Store iOS, media sosial, analisis kausal.
 

@@ -1,57 +1,57 @@
 app_key,feature,available,notes,audited_at
-daya_auto,booking_servis,,,
-daya_auto,klaim_kpb,,,
-daya_auto,asuransi_digital,,,
-daya_auto,home_service,,,
-daya_auto,pembelian_sparepart,,,
-daya_auto,info_produk,,,
-daya_auto,simulasi_cicilan,,,
-daya_auto,test_ride,,,
-daya_auto,promo_poin,,,
-daya_auto,notifikasi_pengingat,,,
-daya_auto,riwayat_servis,,,
-daya_auto,lokasi_bengkel,,,
-daya_auto,chat_cs,,,
-daya_auto,pembayaran_di_aplikasi,,,
-wanda,booking_servis,,,
-wanda,klaim_kpb,,,
-wanda,asuransi_digital,,,
-wanda,home_service,,,
-wanda,pembelian_sparepart,,,
-wanda,info_produk,,,
-wanda,simulasi_cicilan,,,
-wanda,test_ride,,,
-wanda,promo_poin,,,
-wanda,notifikasi_pengingat,,,
-wanda,riwayat_servis,,,
-wanda,lokasi_bengkel,,,
-wanda,chat_cs,,,
-wanda,pembayaran_di_aplikasi,,,
-mpm_brompit,booking_servis,,,
-mpm_brompit,klaim_kpb,,,
-mpm_brompit,asuransi_digital,,,
-mpm_brompit,home_service,,,
-mpm_brompit,pembelian_sparepart,,,
-mpm_brompit,info_produk,,,
-mpm_brompit,simulasi_cicilan,,,
-mpm_brompit,test_ride,,,
-mpm_brompit,promo_poin,,,
-mpm_brompit,notifikasi_pengingat,,,
-mpm_brompit,riwayat_servis,,,
-mpm_brompit,lokasi_bengkel,,,
-mpm_brompit,chat_cs,,,
-mpm_brompit,pembayaran_di_aplikasi,,,
-mpm_ohc,booking_servis,,,
-mpm_ohc,klaim_kpb,,,
-mpm_ohc,asuransi_digital,,,
-mpm_ohc,home_service,,,
-mpm_ohc,pembelian_sparepart,,,
-mpm_ohc,info_produk,,,
-mpm_ohc,simulasi_cicilan,,,
-mpm_ohc,test_ride,,,
-mpm_ohc,promo_poin,,,
-mpm_ohc,notifikasi_pengingat,,,
-mpm_ohc,riwayat_servis,,,
-mpm_ohc,lokasi_bengkel,,,
-mpm_ohc,chat_cs,,,
-mpm_ohc,pembayaran_di_aplikasi,,,
+daya_auto,booking_servis,Yes,"Pengguna dapat memilih jadwal servis di AHASS maupun servis di rumah melalui aplikasi.",2026-11-02
+daya_auto,klaim_kpb,Yes,"KPB tersedia secara digital. Pengguna dapat melihat kupon dan riwayat penukarannya.",2026-11-02
+daya_auto,asuransi_digital,Partial,"Pengguna dapat melihat status asuransi kecelakaan. Fitur pengajuan klaim digital belum terkonfirmasi.",2026-11-02
+daya_auto,home_service,Yes,"Tersedia pilihan servis di rumah melalui layanan Honda Care dengan syarat dan ketentuan berlaku.",2026-11-02
+daya_auto,pembelian_sparepart,Yes,"Pengguna dapat melihat katalog sparepart dan melakukan pemesanan melalui aplikasi.",2026-11-02
+daya_auto,info_produk,Yes,"Tersedia informasi motor Honda, spesifikasi, harga OTR, katalog dan promo produk.",2026-11-02
+daya_auto,simulasi_cicilan,Yes,"Pengguna dapat menghitung estimasi cicilan berdasarkan uang muka dan pilihan tenor.",2026-11-02
+daya_auto,test_ride,Yes,"Pengguna dapat memilih lokasi dan jadwal untuk melakukan test ride motor Honda.",2026-11-02
+daya_auto,promo_poin,Yes,"Tersedia Hepigo Poin yang dapat dikumpulkan dan ditukar dengan berbagai voucher.",2026-11-02
+daya_auto,notifikasi_pengingat,Unverified,"Belum ditemukan keterangan resmi yang cukup untuk memastikan fitur pengingat servis otomatis.",2026-11-02
+daya_auto,riwayat_servis,Yes,"Pengguna dapat melihat riwayat servis, termasuk waktu dan pekerjaan yang pernah dilakukan.",2026-11-02
+daya_auto,lokasi_bengkel,Yes,"Tersedia fitur pencarian jaringan AHASS beserta informasi lokasi, jam operasional dan kontak.",2026-11-02
+daya_auto,chat_cs,Partial,"Tersedia kanal komunikasi customer service melalui WhatsApp, tetapi fitur live chat di dalam aplikasi belum terkonfirmasi.",2026-11-02
+daya_auto,pembayaran_di_aplikasi,Yes,"Tersedia fitur e-payment untuk pembayaran servis melalui scan atau upload.",2026-11-02
+wanda,booking_servis,Yes,"Pengguna dapat memilih AHASS dan jadwal servis. Tersedia juga estimasi biaya dan prioritas antrean.",2026-11-02
+wanda,klaim_kpb,Yes,"KPB Digital dapat digunakan untuk mengklaim servis gratis setelah melakukan booking melalui aplikasi.",2026-11-02
+wanda,asuransi_digital,Partial,"FAQ menyebut fasilitas asuransi kecelakaan, tetapi proses pembelian dan pengajuan klaim digital belum terkonfirmasi.",2026-11-02
+wanda,home_service,Yes,"Tersedia layanan Home Service sehingga konsumen dapat melakukan servis tanpa harus datang ke AHASS.",2026-11-02
+wanda,pembelian_sparepart,Yes,"Pengguna dapat memilih dan membeli sparepart serta aksesoris Honda melalui aplikasi.",2026-11-02
+wanda,info_produk,Yes,"Tersedia informasi produk motor Honda, termasuk pilihan motor dan informasi kendaraan listrik.",2026-11-02
+wanda,simulasi_cicilan,Unverified,"Belum ditemukan dokumentasi resmi yang memastikan adanya fitur simulasi cicilan di aplikasi.",2026-11-02
+wanda,test_ride,Unverified,"Belum ditemukan informasi resmi yang memastikan pemesanan jadwal test ride melalui aplikasi.",2026-11-02
+wanda,promo_poin,Yes,"Tersedia Hepigo Point, program loyalty, penukaran poin, voucher dan berbagai promo merchant.",2026-11-02
+wanda,notifikasi_pengingat,Yes,"Tersedia penjadwalan servis otomatis untuk tiga bulan berikutnya di AHASS terakhir.",2026-11-02
+wanda,riwayat_servis,Yes,"Pengguna dapat melihat riwayat servis kendaraan melalui aplikasi.",2026-11-02
+wanda,lokasi_bengkel,Yes,"Pengguna dapat memilih jaringan AHASS untuk booking servis. Tersedia jaringan lebih dari 300 bengkel resmi.",2026-11-02
+wanda,chat_cs,Partial,"Wahana menyediakan chatbot Wanda sebagai kanal bantuan, tetapi ketersediaan live chat langsung di aplikasi perlu dikonfirmasi.",2026-11-02
+wanda,pembayaran_di_aplikasi,Unverified,"Tersedia proses check-in dan check-out servis serta penggunaan voucher, tetapi pembayaran digital langsung di aplikasi belum terkonfirmasi.",2026-11-02
+mpm_brompit,booking_servis,Yes,"Pengguna dapat melakukan booking servis di AHASS dan mendapatkan pengingat jadwal kunjungan.",2026-11-02
+mpm_brompit,klaim_kpb,Partial,"KPB Digital tercantum dalam informasi layanan BromPit, tetapi dokumentasi yang ditemukan masih memiliki keterangan fitur yang perlu dikonfirmasi.",2026-11-02
+mpm_brompit,asuransi_digital,Unverified,"Belum ditemukan bukti resmi yang memastikan adanya layanan asuransi digital di aplikasi.",2026-11-02
+mpm_brompit,home_service,Partial,"MPM menyediakan layanan kunjung dan layanan darurat, tetapi pemesanan home service langsung melalui aplikasi belum terkonfirmasi.",2026-11-02
+mpm_brompit,pembelian_sparepart,Yes,"Pengguna dapat melihat, memesan sparepart asli Honda dan memantau status pesanan.",2026-11-02
+mpm_brompit,info_produk,Yes,"Tersedia informasi mengenai produk dan sepeda motor Honda terbaru.",2026-11-02
+mpm_brompit,simulasi_cicilan,Unverified,"Belum ditemukan dokumentasi resmi yang memastikan adanya fitur simulasi cicilan.",2026-11-02
+mpm_brompit,test_ride,Yes,"Tersedia fitur test ride. Informasi versi aplikasi juga menyebutkan dukungan test ride lebih dari satu tipe motor.",2026-11-02
+mpm_brompit,promo_poin,Yes,"Tersedia Hepigo Poin yang dapat dikumpulkan dan ditukar dengan voucher menarik.",2026-11-02
+mpm_brompit,notifikasi_pengingat,Yes,"Aplikasi memberikan pengingat booking servis dan informasi jadwal servis berikutnya.",2026-11-02
+mpm_brompit,riwayat_servis,Yes,"Pengguna dapat melihat riwayat servis dan penggantian sparepart kendaraan.",2026-11-02
+mpm_brompit,lokasi_bengkel,Yes,"Tersedia bantuan pencarian AHASS dan mekanik terdekat melalui layanan darurat.",2026-11-02
+mpm_brompit,chat_cs,Partial,"Tersedia Emergency Call dan layanan bantuan pelanggan, tetapi fitur percakapan live chat belum terkonfirmasi.",2026-11-02
+mpm_brompit,pembayaran_di_aplikasi,Partial,"Terdapat informasi countdown payment untuk transaksi, tetapi pembayaran langsung melalui aplikasi belum dapat dipastikan.",2026-11-02
+hso_motorku,booking_servis,Yes,"Pengguna dapat mendaftarkan motor menggunakan nomor mesin dan melakukan booking servis AHASS.",2026-11-02
+hso_motorku,klaim_kpb,Unverified,"Belum ditemukan dokumentasi resmi yang cukup untuk memastikan seluruh proses klaim KPB dapat dilakukan secara digital.",2026-11-02
+hso_motorku,asuransi_digital,Yes,"Tersedia fitur E-Insurance untuk informasi dan layanan asuransi pengguna.",2026-11-02
+hso_motorku,home_service,Unverified,"Belum ditemukan informasi resmi yang memastikan pemesanan servis di rumah melalui aplikasi.",2026-11-02
+hso_motorku,pembelian_sparepart,Partial,"Tersedia fitur pelacakan sparepart dan aksesoris serta scan QR untuk pemeriksaan keaslian, tetapi transaksi pembelian langsung belum terkonfirmasi.",2026-11-02
+hso_motorku,info_produk,Unverified,"Belum ditemukan dokumentasi resmi yang cukup untuk memastikan kelengkapan katalog dan informasi produk motor.",2026-11-02
+hso_motorku,simulasi_cicilan,Unverified,"Belum ditemukan bukti resmi mengenai fitur simulasi cicilan di aplikasi.",2026-11-02
+hso_motorku,test_ride,Unverified,"Belum ditemukan bukti resmi yang memastikan fitur pemesanan test ride tersedia.",2026-11-02
+hso_motorku,promo_poin,Yes,"Tersedia program poin, voucher, promo eksklusif dan Spin Wheel untuk mendapatkan hadiah.",2026-11-02
+hso_motorku,notifikasi_pengingat,Yes,"Tersedia Booking Service Reminder untuk mengingatkan pengguna sebelum jadwal servis.",2026-11-02
+hso_motorku,riwayat_servis,Yes,"Pengguna dapat melihat riwayat servis melalui aplikasi, termasuk pembaruan fitur pada versi 2026.",2026-11-02
+hso_motorku,lokasi_bengkel,Unverified,"Belum ditemukan dokumentasi resmi yang cukup untuk memastikan fitur pencarian lokasi AHASS secara langsung.",2026-11-02
+hso_motorku,chat_cs,Partial,"Tersedia Hotline Order Tracking dan kanal bantuan pelanggan, tetapi fitur live chat belum terkonfirmasi.",2026-11-02
+hso_motorku,pembayaran_di_aplikasi,Yes,"Tersedia pembayaran menggunakan QRIS AstraPay berdasarkan catatan pembaruan aplikasi versi 2.1.5.",2026-11-02
