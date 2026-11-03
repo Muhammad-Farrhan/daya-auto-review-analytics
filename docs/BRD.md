@@ -1,7 +1,7 @@
 # Business Requirements Document (ringkas)
 
 **Judul:** Voice of Customer Daya Auto: dari ulasan pengguna ke prioritas perbaikan
-**Penulis:** (namamu)  **Versi/Tanggal:** v0.1 / (isi)
+**Penulis:** Muhammad Farhan  **Versi/Tanggal:** v0.1 / 3 November 2026
 
 ## 1\. Latar belakang
 
