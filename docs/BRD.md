@@ -2,7 +2,9 @@
 
 **Judul:** Voice of Customer Daya Auto: dari ulasan pengguna ke prioritas perbaikan
 
-**Penulis:** Muhammad Farhan  **Versi/Tanggal:** v0.1 / 3 November 2026
+**Penulis:** Muhammad Farhan  
+
+**Versi/Tanggal:** v0.1 / 3 November 2026
 
 ## 1\. Latar belakang
 
