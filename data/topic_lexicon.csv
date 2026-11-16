@@ -171,3 +171,14 @@ general_praise,cepat,0,1
 general_praise,lancar,0,1
 general_praise,senang,0,1
 general_praise,suka,0,1
+general_praise,terima kasih,0,1
+general_praise,puas,0,1
+general_praise,bagus banget,0,1
+app_bug_crash,force close,0,0
+app_bug_crash,susah dibuka,0,0
+app_bug_crash,sering keluar sendiri,0,0
+account_data,ganti nomor,0,0
+account_data,tidak bisa daftar,0,0
+account_data,salah nomor,0,0
+ui_ux,ribet,0,0
+ui_ux,membingungkan,0,0
