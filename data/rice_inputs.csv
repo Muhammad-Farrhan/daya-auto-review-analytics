@@ -1,13 +1,13 @@
 topic,reach,impact,confidence,effort,notes
-login_otp,,,,,
-account_data,,,,,
-booking_service,,,,,
-kpb_claim,,,,,
-insurance_digital,,,,,
-parts_homeservice,,,,,
-promo_points,,,,,
-app_bug_crash,,,,,
-performance_slow,,,,,
-ui_ux,,,,,
-notification_reminder,,,,,
-dealer_workshop,,,,,
+login_otp,500,3,0.9,1,"Kritis. Jika OTP gagal, pengguna tidak bisa masuk sama sekali."
+account_data,300,2,0.8,1.5,Penting. Data motor/nomor rangka harus akurat untuk klaim servis.
+booking_service,2000,1,0.8,2,"Digunakan banyak orang. Bug membuat frustrasi, tapi servis masih bisa dilakukan di bengkel."
+kpb_claim,400,2,0.7,1.5,"Klaim KPB (servis gratis) adalah daya tarik utama. Jika gagal, pengguna merasa tertipu."
+insurance_digital,100,1,0.6,4,"Fitur tambahan. Butuh integrasi dengan pihak ketiga (asuransi), jadi effort tinggi."
+parts_homeservice,300,1,0.7,3,Logistik sparepart & home service butuh effort operasional yang besar.
+promo_points,800,0.5,0.8,1,"Pengguna suka poin, tapi jika error, mereka hanya kecewa, tidak berhenti servis."
+app_bug_crash,800,3,0.9,2,Aplikasi crash adalah mimpi buruk. Effort tinggi karena butuh investigasi bug yang mendalam.
+performance_slow,1000,3,0.9,3,Prioritas #1. Aplikasi lemot membuat semua fitur tidak berguna. Butuh optimasi backend berat.
+ui_ux,600,1,0.7,4,"Redesain UI butuh waktu lama dan riset desain, tapi dampaknya tidak seinstan bug fix."
+notification_reminder,400,0.5,0.8,0.5,Fitur pengingat itu nice-to-have. Effort-nya sangat rendah (hanya setel cron job).
+dealer_workshop,1500,1,0.7,3,Masalah pelayanan bengkel (offline) sulit diselesaikan lewat aplikasi. Butuh pelatihan SDM.
