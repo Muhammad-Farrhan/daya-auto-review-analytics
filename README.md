@@ -32,7 +32,6 @@ Namun, perusahaan sering kali kesulitan menangkap sinyal-sinyal ini karena keter
 4. **Data Warehousing:** Penyimpanan data ke PostgreSQL untuk *querying* yang kompleks.
 5. **Data Visualization:** Perancangan UI/UX Dashboard 5 halaman menggunakan **Tableau Public** dan *wireframing* **Draw.io**.
 
-*(Saran Gambar: Masukkan screenshot Halaman 1 Dashboard di sini)*
 ![Executive Summary Dashboard](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Executive%20Summary.png)
 
 ## 💡 Key Insights
