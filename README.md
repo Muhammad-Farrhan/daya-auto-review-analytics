@@ -42,9 +42,8 @@ Berdasarkan analisis terhadap **28.140 ulasan** (Daya Auto: 13.558, Motorku X: 6
 *   **Anomali Fitur Booking:** Meskipun banyak dikeluhkan (15.4%), fitur "Booking Servis" justru memiliki rating yang sangat tinggi (**4.63**). Ini menandakan fiturnya sangat disukai, namun segelintir pengguna mengalami *error* teknis saat menggunakannya.
 *   **Keunggulan Layanan Pelanggan (CS):** Dari sisi *Benchmark*, Daya Auto adalah yang paling responsif di industri. Waktu balas median CS hanya **18 Jam**, jauh lebih cepat dibandingkan Motorku X yang memakan waktu hingga **172 Jam**.
 *   **Dampak Update Versi:** Rilis versi tertentu (seperti `NDS.Nw.423`) terbukti berkorelasi dengan penurunan rating sebesar **-0.56** poin, memberikan sinyal bagi tim QA untuk mengevaluasi *changelog* versi tersebut.
-https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/blob/main/screenshot/Voice%20of%20Customer.png
-*(Saran Gambar: Masukkan screenshot Halaman 2 (VoC) atau Halaman 5 (Priority Matrix))*
-`![Priority Matrix](LINK_GAMBAR_PRIORITY_MATRIX_DI_GITHUB)`
+
+![Priority Matrix](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/blob/69752274f8a33289573e53647ec950a756e4f96c/screenshot/Priority%20Matrix.png)
 
 ## 🚀 Business Recommendations & Impact
 1.  **Prioritas #1 (Skor Keluhan): Perbaikan Performa Aplikasi.** 
