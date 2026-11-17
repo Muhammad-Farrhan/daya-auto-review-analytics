@@ -1,85 +1,73 @@
-# Daya Auto Voice of Customer
+# Daya Auto Voice of Customer (VoC) Analytics
+**Dari 28.000+ Ulasan Pengguna Menjadi Prioritas Perbaikan Aplikasi Berbasis Data**
 
-**Dari Ulasan Pengguna ke Prioritas Perbaikan: Analisis Aplikasi Layanan Main Dealer Honda (2024–2026)**
+[![Tableau Public](https://img.shields.io/badge/Tableau-Public-blue?style=flat-square&logo=tableau)](https://public.tableau.com/app/profile/muhammad.farhan7811/viz/DayaVOC/ExecutiveSummary)
+[![Python](https://img.shields.io/badge/Python-3.11+-yellow?style=flat-square&logo=python)](https://www.python.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
 
-Proyek portofolio business analyst: mengumpulkan ulasan Google Play aplikasi **Daya Auto** dan beberapa aplikasi
-main dealer Honda lain, mengolahnya di PostgreSQL + Python, lalu menyajikannya di **Tableau**.
+🔗 **[Lihat Dashboard Interaktif di Tableau Public](https://public.tableau.com/app/profile/muhammad.farhan7811/viz/DayaVOC/ExecutiveSummary)**
 
-Empat topik yang dijawab:
+---
 
-| # | Topik | Pertanyaan | Keluaran utama |
-|---|---|---|---|
-| 1 | Voice of Customer | Apa keluhan & pujian utama pengguna Daya Auto? | `topic_summary`, `topic_month`, `kpi_monthly` |
-| 2 | Dampak update | Apakah versi tertentu mengubah rating? | `version_stats`, `version_window` |
-| 3 | Benchmark | Di mana Daya Auto unggul/tertinggal dari main dealer lain? | `benchmark`, `feature_matrix`, `topic_summary` |
-| 4 | Prioritas perbaikan | Apa yang sebaiknya diperbaiki lebih dulu? | `priority_topic` (+ RICE & user story) |
+## 📌 Project Overview
+Proyek ini adalah analisis independen berbasis data yang bertujuan mengevaluasi pengalaman pengguna aplikasi **Daya Auto** (aplikasi main dealer Honda untuk wilayah Jawa Barat, Sulut, Malut, Gorontalo) dan membandingkannya dengan aplikasi kompetitor (Wanda, BromPit, Motorku X). 
 
-> Ini analisis independen dari ulasan publik. Bukan data internal Daya Group.
+Dengan mengekstraksi lebih dari **28.000 ulasan publik** dari Google Play Store, proyek ini mengubah teks keluhan yang tidak terstruktur menjadi *actionable insights* melalui *pipeline* data end-to-end (Scraping, NLP, Database, dan Visualisasi).
 
-## Struktur
+## 🚨 Business Problem
+Di industri purnajual otomotif, pengalaman digital (aplikasi) adalah titik sentuh pertama pelanggan sebelum mereka datang ke bengkel. Kegagalan teknis kecil (seperti gagal *booking* atau aplikasi *crash*) dapat memicu churn (beralih ke bengkel non-resmi). 
 
-```
-data/        apps.csv (ISI package_id), topic_lexicon.csv, normalization.csv, events.csv,
-             feature_audit.csv, rice_inputs.csv, gold/ (label manual, tidak di-commit)
-sql/         01_schema.sql  02_marts.sql  03_quality_checks.sql
-src/         skrip Python (lihat urutan di bawah)
-tests/       unit test (python -m unittest discover -s tests)
-docs/        PANDUAN_LANGKAH.md  BRD_template.md  USER_STORIES_template.md
-             TABLEAU_GUIDE.md  DATA_DICTIONARY.md  ETIKA_DAN_BATASAN.md
-exports/     CSV untuk Tableau (dibuat otomatis, tidak di-commit)
-```
+Namun, perusahaan sering kali kesulitan menangkap sinyal-sinyal ini karena keterbatasan data internal. Ulasan publik di Google Play menyimpan "VoC" (Voice of Customer) yang sangat berharga, namun volumenya terlalu besar untuk dibaca secara manual.
 
-## Mulai cepat
+## 🎯 Objectives
+1. Mengidentifikasi topik keluhan dan pujian utama pengguna Daya Auto.
+2. Melacak dampak rilis versi aplikasi terhadap perubahan rating.
+3. Melakukan *benchmarking* performa layanan digital dengan kompetitor.
+4. Menyusun matriks prioritas perbaikan menggunakan metode *Scoring* dan **RICE Framework**.
 
-```bash
-# 1. lingkungan
-python -m venv .venv
-source .venv/bin/activate            # Windows PowerShell: .venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-cp .env.example .env                 # Windows: copy .env.example .env
+## ⚙️ Methodology & Process Flow
+1. **Data Extraction:** Scraping ulasan Google Play (2024–2026) menggunakan Python (`google-play-scraper`).
+2. **Data Processing:** Pembersihan teks bahasa Indonesia, penanganan *slang words*, dan *masking* PII (Privasi).
+3. **Data Labeling (NLP):** Klasifikasi topik berbasis kamus (*lexicon*) yang divalidasi secara manual dengan *Gold Set* (Akurasi Topik: 62.5%, Akurasi Sentimen: 69.8%).
+4. **Data Warehousing:** Penyimpanan data ke PostgreSQL untuk *querying* yang kompleks.
+5. **Data Visualization:** Perancangan UI/UX Dashboard 5 halaman menggunakan **Tableau Public** dan *wireframing* **Draw.io**.
 
-# 2. database (Docker, atau PostgreSQL biasa dengan database bernama daya_voc)
-docker compose up -d
-python src/init_db.py                # membuat skema + view
+*(Saran Gambar: Masukkan screenshot Halaman 1 Dashboard di sini)*
+`![Executive Summary Dashboard](LINK_GAMBAR_DASHBOARD_ANDA_DI_GITHUB)`
 
-# 3. uji alur memakai DATA SINTETIS (opsional tapi sangat disarankan)
-python src/seed_demo_data.py --n 600
-python src/clean_reviews.py
-python src/label_reviews.py
-python src/export_tableau.py --include-demo      # CSV demo untuk merancang layout Tableau
-python src/seed_demo_data.py --purge             # WAJIB: hapus data demo sebelum data asli
+## 💡 Key Insights
+Berdasarkan analisis terhadap **28.140 ulasan** (Daya Auto: 13.558, Motorku X: 6.243, BromPit: 3.283, Wanda: 5.056):
 
-# 4. data asli
-#    isi package_id di data/apps.csv (dari URL Play Store: ...details?id=PACKAGE_ID)
-python src/load_reference.py
-python src/fetch_app_meta.py
-python src/scrape_playstore.py --all --since 2024-01-01
-python src/clean_reviews.py
-python src/label_reviews.py
+*   **Tingkat Kepuasan Tinggi:** Daya Auto mencatatkan *Weighted Rating* tertinggi di antara kompetitor sebesar **4.55**, dengan persentase ulasan negatif hanya **10.1%**.
+*   **Masalah Utama Adalah Performa:** "Performa lambat" (lemot) menyumbang **29.5%** dari total ulasan negatif dengan rating rata-rata sangat rendah (2.12). Ini adalah prioritas utama (#1) berdasarkan Skor Keparahan.
+*   **Anomali Fitur Booking:** Meskipun banyak dikeluhkan (15.4%), fitur "Booking Servis" justru memiliki rating yang sangat tinggi (**4.63**). Ini menandakan fiturnya sangat disukai, namun segelintir pengguna mengalami *error* teknis saat menggunakannya.
+*   **Keunggulan Layanan Pelanggan (CS):** Dari sisi *Benchmark*, Daya Auto adalah yang paling responsif di industri. Waktu balas median CS hanya **18 Jam**, jauh lebih cepat dibandingkan Motorku X yang memakan waktu hingga **172 Jam**.
+*   **Dampak Update Versi:** Rilis versi tertentu (seperti `NDS.Nw.423`) terbukti berkorelasi dengan penurunan rating sebesar **-0.56** poin, memberikan sinyal bagi tim QA untuk mengevaluasi *changelog* versi tersebut.
 
-# 5. validasi label (gold set manual, ±100 ulasan per aplikasi)
-python src/make_gold_sample.py --n-per-app 100
-#    isi gold_sentiment & gold_topic di data/gold/gold_sample.csv
-python src/load_gold.py
-python src/evaluate_labels.py
-#    perbaiki data/topic_lexicon.csv -> python src/label_reviews.py --relabel
+*(Saran Gambar: Masukkan screenshot Halaman 2 (VoC) atau Halaman 5 (Priority Matrix))*
+`![Priority Matrix](LINK_GAMBAR_PRIORITY_MATRIX_DI_GITHUB)`
 
-# 6. ekspor untuk Tableau
-python src/export_tableau.py
-```
+## 🚀 Business Recommendations & Impact
+1.  **Prioritas #1 (Skor Keluhan): Perbaikan Performa Aplikasi.** 
+    *   **Target:** Menurunkan persentase ulasan negatif terkait "Performa lambat" sebesar 15% dalam 3 bulan setelah rilis *update*. 
+    *   **Aksi:** Tim *developer* harus melakukan optimasi *backend* dan *caching* agar waktu *loading* < 3 detik.
+2.  **Prioritas #2 (Quick-Win RICE Score): Perbaikan Sistem OTP.**
+    *   Meskipun peringkat keluhannya berada di bawah performa, isu Login & OTP memiliki **RICE Score tertinggi (1.350)** karena *effort* (usaha) perbaikannya rendah namun *impact*-nya masif (mencegah pengguna terkunci di luar aplikasi).
+3.  **Leverage CS Advantage:** Pertahankan kecepatan respons CS (18 jam) sebagai *Unique Selling Point* di Play Store, dan gunakan kanal tersebut untuk mengedukasi pengguna terkait kendala teknis.
 
-Atau jalankan beberapa langkah sekaligus: `python src/pipeline.py --steps clean,label,export`.
+## 🛠️ Tools Used
+*   **Data Extraction & Processing:** Python (Pandas, `google-play-scraper`)
+*   **Database & Querying:** PostgreSQL, SQLAlchemy, DBeaver
+*   **Data Visualization:** Tableau Public
+*   **UI/UX Wireframing:** Draw.io
+*   **Version Control:** Git / GitHub
 
-Panduan lengkap per minggu: **docs/PANDUAN_LANGKAH.md**.
+## 📂 Repository Structure
+*   `data/`: Berisi file CSV referensi (kamus lexicon, pemetaan aplikasi, input RICE).
+*   `src/`: *Source code* Python (Scraping, Cleaning, NLP labeling, Export ke Tableau).
+*   `sql/`: Kumpulan *query* DDL (Skema, View, Quality Checks).
+*   `docs/`: Dokumen pendukung (BRD, Data Dictionary, User Stories).
+*   `exports/`: (Gitignored) File CSV yang diekspor untuk Tableau.
 
-## Status verifikasi (jujur)
-
-- 36 unit test untuk logika murni (normalisasi teks, kamus topik, metrik, sampling, data demo) **lulus**:
-  `python -m unittest discover -s tests -v`
-- Skrip yang menyentuh database / Play Store (`init_db`, `scrape_playstore`, `fetch_app_meta`, `load_reference`,
-  `clean_reviews`, `label_reviews`, view di `sql/02_marts.sql`, dll.) **belum pernah dijalankan** terhadap PostgreSQL
-  sungguhan oleh pembuatnya (lingkungan pembuat tidak punya database maupun internet). Karena itu langkah 3 di atas
-  (uji dengan data sintetis) adalah smoke test: jika ada error SQL/Python, salin pesan errornya dan perbaiki
-  sebelum scraping data asli.
-- Kamus topik (`topic_lexicon.csv`) adalah titik awal. Sesuaikan setelah membaca ulasan asli dan mengukur akurasi
-  dengan gold set.
+## ⚠️ Disclaimer
+*Proyek ini adalah analisis independen yang dibuat untuk tujuan portofolio. Data yang digunakan adalah ulasan publik dari Google Play Store. Analisis ini tidak menggunakan data internal PT Daya Adicipta Motora dan tidak berafiliasi resmi dengan perusahaan.*
