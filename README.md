@@ -33,7 +33,7 @@ Namun, perusahaan sering kali kesulitan menangkap sinyal-sinyal ini karena keter
 5. **Data Visualization:** Perancangan UI/UX Dashboard 5 halaman menggunakan **Tableau Public** dan *wireframing* **Draw.io**.
 
 *(Saran Gambar: Masukkan screenshot Halaman 1 Dashboard di sini)*
-`![Executive Summary Dashboard](screenshot/Executive Summary.png)`
+`![Executive Summary Dashboard](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Executive%20Summary.png)`
 
 ## 💡 Key Insights
 Berdasarkan analisis terhadap **28.140 ulasan** (Daya Auto: 13.558, Motorku X: 6.243, BromPit: 3.283, Wanda: 5.056):
