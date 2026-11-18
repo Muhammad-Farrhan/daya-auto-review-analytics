@@ -36,23 +36,23 @@ Perusahaan sering kali kesulitan menangkap sinyal-sinyal ini karena keterbatasan
 
 **1. Executive Summary**
 Memberikan gambaran umum metrik utama: Total ulasan, rating rata-rata, persentase ulasan negatif, dan kecepatan respons CS.
-![Executive Summary Dashboard](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Executive%20Summary.png)
+![Executive Summary Dashboard](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/Screenshot/Executive%20Summary.png)
 
 **2. Voice of Customer**
 Membedah topik keluhan dan pujian, serta memetakan trennya dari bulan ke bulan menggunakan *Heatmap*.
-![Voice of Customer](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Voice%20of%20Customer.png)
+![Voice of Customer](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/Screenshot/Voice%20of%20Customer.png)
 
 **3. Version Impact Analysis**
 Menganalisis korelasi antara rilis versi terbaru dengan perubahan rating aplikasi (menggunakan proksi tanggal).
-![Version Impact](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Version%20Impact.png)
+![Version Impact](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/Screenshot/Version%20Impact.png)
 
 **4. Competitor Benchmark**
 Membandingkan performa Daya Auto dengan kompetitor (Peta Persaingan, Waktu Balas CS, dan Matriks Fitur).
-![Benchmark](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Benchmark.png)
+![Benchmark](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/Screenshot/Benchmark.png)
 
 **5. Priority Matrix**
 Matriks prioritas perbaikan berdasarkan Frekuensi, Keparahan, dan Engagement, dilengkapi dengan RICE Score dan rekomendasi *User Story*.
-![Priority Matrix](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Priority%20Matrix.png)
+![Priority Matrix](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/Screenshot/Priority%20Matrix.png)
 
 ## 💡 Key Insights
 Berdasarkan analisis terhadap dataset final (7.370 ulasan Daya Auto):
