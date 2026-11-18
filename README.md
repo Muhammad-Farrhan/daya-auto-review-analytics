@@ -1,5 +1,5 @@
 # Daya Auto Voice of Customer (VoC) Analytics
-**Dari 28.000+ Ulasan Pengguna Menjadi Prioritas Perbaikan Aplikasi Berbasis Data**
+**Mengubah 28.000+ Ulasan Pengguna Menjadi Prioritas Perbaikan Aplikasi Berbasis Data**
 
 [![Tableau Public](https://img.shields.io/badge/Tableau-Public-blue?style=flat-square&logo=tableau)](https://public.tableau.com/app/profile/muhammad.farhan7811/viz/DayaVOC/ExecutiveSummary)
 [![Python](https://img.shields.io/badge/Python-3.11+-yellow?style=flat-square&logo=python)](https://www.python.org/)
@@ -10,14 +10,14 @@
 ---
 
 ## 📌 Project Overview
-Proyek ini adalah analisis independen berbasis data yang bertujuan mengevaluasi pengalaman pengguna aplikasi **Daya Auto** (aplikasi main dealer Honda untuk wilayah Jawa Barat, Sulut, Malut, Gorontalo) dan membandingkannya dengan aplikasi kompetitor (Wanda, BromPit, Motorku X). 
+Proyek ini adalah analisis independen berbasis data yang bertujuan mengevaluasi pengalaman pengguna aplikasi **Daya Auto** (aplikasi main dealer Honda) dan membandingkannya dengan aplikasi kompetitor (Wanda, BromPit, Motorku X). 
 
-Dengan mengekstraksi lebih dari **28.000 ulasan publik** dari Google Play Store, proyek ini mengubah teks keluhan yang tidak terstruktur menjadi *actionable insights* melalui *pipeline* data end-to-end (Scraping, NLP, Database, dan Visualisasi).
+Dengan mengekstraksi lebih dari **28.000 ulasan publik** dari Google Play Store, proyek ini mengubah teks keluhan yang tidak terstruktur menjadi *actionable insights* melalui *pipeline* data end-to-end. Setelah melalui proses pembersihan data (menghapus duplikat dan spam), analisis difokuskan pada **7.370 ulasan valid** untuk aplikasi Daya Auto.
 
 ## 🚨 Business Problem
-Di industri purnajual otomotif, pengalaman digital (aplikasi) adalah titik sentuh pertama pelanggan sebelum mereka datang ke bengkel. Kegagalan teknis kecil (seperti gagal *booking* atau aplikasi *crash*) dapat memicu churn (beralih ke bengkel non-resmi). 
+Di industri purnajual otomotif, pengalaman digital adalah titik sentuh pertama pelanggan. Kegagalan teknis kecil (seperti gagal *booking* atau aplikasi *crash*) dapat memicu *churn* (beralih ke bengkel non-resmi). 
 
-Namun, perusahaan sering kali kesulitan menangkap sinyal-sinyal ini karena keterbatasan data internal. Ulasan publik di Google Play menyimpan "VoC" (Voice of Customer) yang sangat berharga, namun volumenya terlalu besar untuk dibaca secara manual.
+Perusahaan sering kali kesulitan menangkap sinyal-sinyal ini karena keterbatasan data internal. Ulasan publik di Google Play menyimpan "VoC" yang sangat berharga, namun volumenya terlalu besar untuk dibaca secara manual.
 
 ## 🎯 Objectives
 1. Mengidentifikasi topik keluhan dan pujian utama pengguna Daya Auto.
@@ -32,24 +32,42 @@ Namun, perusahaan sering kali kesulitan menangkap sinyal-sinyal ini karena keter
 4. **Data Warehousing:** Penyimpanan data ke PostgreSQL untuk *querying* yang kompleks.
 5. **Data Visualization:** Perancangan UI/UX Dashboard 5 halaman menggunakan **Tableau Public** dan *wireframing* **Draw.io**.
 
+## 📊 Dashboard Preview
+
+**1. Executive Summary**
+Memberikan gambaran umum metrik utama: Total ulasan, rating rata-rata, persentase ulasan negatif, dan kecepatan respons CS.
 ![Executive Summary Dashboard](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Executive%20Summary.png)
 
+**2. Voice of Customer**
+Membedah topik keluhan dan pujian, serta memetakan trennya dari bulan ke bulan menggunakan *Heatmap*.
+![Voice of Customer](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Voice%20of%20Customer.png)
+
+**3. Version Impact Analysis**
+Menganalisis korelasi antara rilis versi terbaru dengan perubahan rating aplikasi (menggunakan proksi tanggal).
+![Version Impact](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Version%20Impact.png)
+
+**4. Competitor Benchmark**
+Membandingkan performa Daya Auto dengan kompetitor (Peta Persaingan, Waktu Balas CS, dan Matriks Fitur).
+![Benchmark](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Benchmark.png)
+
+**5. Priority Matrix**
+Matriks prioritas perbaikan berdasarkan Frekuensi, Keparahan, dan Engagement, dilengkapi dengan RICE Score dan rekomendasi *User Story*.
+![Priority Matrix](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/raw/main/screenshot/Priority%20Matrix.png)
+
 ## 💡 Key Insights
-Berdasarkan analisis terhadap **28.140 ulasan** (Daya Auto: 13.558, Motorku X: 6.243, BromPit: 3.283, Wanda: 5.056):
+Berdasarkan analisis terhadap dataset final (7.370 ulasan Daya Auto):
 
-*   **Tingkat Kepuasan Tinggi:** Daya Auto mencatatkan *Weighted Rating* tertinggi di antara kompetitor sebesar **4.55**, dengan persentase ulasan negatif hanya **10.1%**.
-*   **Masalah Utama Adalah Performa:** "Performa lambat" (lemot) menyumbang **29.5%** dari total ulasan negatif dengan rating rata-rata sangat rendah (2.12). Ini adalah prioritas utama (#1) berdasarkan Skor Keparahan.
-*   **Anomali Fitur Booking:** Meskipun banyak dikeluhkan (15.4%), fitur "Booking Servis" justru memiliki rating yang sangat tinggi (**4.63**). Ini menandakan fiturnya sangat disukai, namun segelintir pengguna mengalami *error* teknis saat menggunakannya.
-*   **Keunggulan Layanan Pelanggan (CS):** Dari sisi *Benchmark*, Daya Auto adalah yang paling responsif di industri. Waktu balas median CS hanya **18 Jam**, jauh lebih cepat dibandingkan Motorku X yang memakan waktu hingga **172 Jam**.
-*   **Dampak Update Versi:** Rilis versi tertentu (seperti `NDS.Nw.423`) terbukti berkorelasi dengan penurunan rating sebesar **-0.56** poin, memberikan sinyal bagi tim QA untuk mengevaluasi *changelog* versi tersebut.
-
-![Priority Matrix](https://github.com/Muhammad-Farrhan/daya-auto-review-analytics/blob/69752274f8a33289573e53647ec950a756e4f96c/screenshot/Priority%20Matrix.png)
+*   **Tingkat Kepuasan Tinggi:** Daya Auto mencatatkan *Weighted Rating* sebesar **4.548**, dengan persentase ulasan negatif hanya **10.09%**.
+*   **Masalah Utama Adalah Performa:** Topik "Performa lambat" menyumbang proporsi negatif tertinggi (**67.05%** dari total sebutan topik tersebut) dengan rating rata-rata sangat rendah (2.12). Ini adalah prioritas utama (#1) berdasarkan Skor Keparahan.
+*   **Anomali Fitur Booking:** Meskipun ada keluhan (8.44%), fitur "Booking Servis" justru mendominasi pujian dengan rating yang sangat tinggi (**91.56% positif**). Ini menandakan fiturnya sangat disukai, namun segelintir pengguna mengalami *error* teknis spesifik.
+*   **Keunggulan Layanan Pelanggan (CS):** Dari sisi *Benchmark*, Daya Auto adalah yang paling responsif di industri. Waktu balas median CS hanya **18 Jam**, jauh lebih cepat dibandingkan Motorku X yang memakan waktu hingga **172.4 Jam**.
+*   **Dampak Update Versi:** Rilis versi tertentu (seperti `NDS.Nw`) terbukti berkorelasi dengan penurunan rating yang cukup drastis sebesar **-0.91** poin, memberikan sinyal bagi tim QA untuk mengevaluasi *changelog* versi tersebut.
 
 ## 🚀 Business Recommendations & Impact
 1.  **Prioritas #1 (Skor Keluhan): Perbaikan Performa Aplikasi.** 
     *   **Target:** Menurunkan persentase ulasan negatif terkait "Performa lambat" sebesar 15% dalam 3 bulan setelah rilis *update*. 
     *   **Aksi:** Tim *developer* harus melakukan optimasi *backend* dan *caching* agar waktu *loading* < 3 detik.
-2.  **Prioritas #2 (Quick-Win RICE Score): Perbaikan Sistem OTP.**
+2.  **Prioritas #2 (Quick-Win RICE Score): Perbaikan Sistem OTP (Login).**
     *   Meskipun peringkat keluhannya berada di bawah performa, isu Login & OTP memiliki **RICE Score tertinggi (1.350)** karena *effort* (usaha) perbaikannya rendah namun *impact*-nya masif (mencegah pengguna terkunci di luar aplikasi).
 3.  **Leverage CS Advantage:** Pertahankan kecepatan respons CS (18 jam) sebagai *Unique Selling Point* di Play Store, dan gunakan kanal tersebut untuk mengedukasi pengguna terkait kendala teknis.
 
